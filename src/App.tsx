@@ -1,9 +1,14 @@
+import './main.css';
+import Navbar from "./components/navbar/navbar.component.tsx";
+import Hero from "./components/hero/hero.component.tsx";
+
 function App() {
-  return (
-    <>
-      <h1>Hello World!</h1>
-    </>
-  );
+    return (
+        <>
+            <Navbar/>
+            <Hero/>
+        </>
+    );
 }
 
 export default App;
