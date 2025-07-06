@@ -1,20 +1,20 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-    color-scheme: light;
+  color-scheme: light;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: "Vazirmatn", system-ui;
+  font-family: 'Vazirmatn', system-ui;
 }
 
 input,
@@ -28,11 +28,11 @@ datalist,
 output,
 option,
 optgroup {
-    font: inherit;
+  font: inherit;
 }
 
 body {
-    inline-size: min(40rem, 100% - 2rem);
+  inline-size: min(40rem, 100% - 2rem);
 
-    margin-inline: auto;
+  margin-inline: auto;
 }
