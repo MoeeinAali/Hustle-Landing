@@ -4,7 +4,7 @@ import LinksComponent from "./components/links.component.tsx";
 import LogoComponent from "./components/logo.component.tsx";
 
 
-export default function Navbar(): ReactElement {
+export default function NavbarComponent(): ReactElement {
     return (
         <div className="py-8 container flex justify-between items-center">
             <LogoComponent/>

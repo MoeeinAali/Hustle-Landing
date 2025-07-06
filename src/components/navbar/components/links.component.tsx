@@ -31,11 +31,11 @@ const NAVBAR_ITEMS: NavbarItem[] = [
 export default function LinksComponent(): ReactElement {
     return (
         <div className="hidden md:block">
-            <ul className="flex gap-3 xl:gap-7">
+            <ul className="flex gap-3 md:gap-4 lg:gap-5 xl:gap-7">
                 {NAVBAR_ITEMS.map((link, index) =>
                     <li key={index}>
                         <a
-                            className="hover:text-primary uppercase text-sm xl:text-base"
+                            className="hover:text-primary uppercase text-sm xl:text-base duration-200"
                             href={link.link}
                         >
                             {link.title}
