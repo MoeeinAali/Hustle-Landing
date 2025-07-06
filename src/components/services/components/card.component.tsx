@@ -7,18 +7,21 @@ export type CardData = {
     title: string,
     description: string,
 }
-export default function CardComponent(props: CardData): ReactElement {
+export default function CardComponent({key,props}: { props: CardData, key: number }): ReactElement {
     return (
-        <motion.div
-            {...slideLeftWhileInViewMotion(props.motionDelay)}
-            className="max-w-[300px] mx-auto space-y-4"
-        >
-            <img src={"/2.png"} alt="" className="w-14"/>
-            <p className="uppercase font-semibold text-xl">{props.title}</p>
-            <p className="text-gray-500 pl-6 border-l-2">
-                {props.description}
-            </p>
-        </motion.div>
+        <>
+            <motion.div
+                key={key}
+                {...slideLeftWhileInViewMotion(props.motionDelay)}
+                className="max-w-[300px] mx-auto space-y-4"
+            >
+                <img src={"/2.png"} alt="" className="w-14"/>
+                <p className="uppercase font-semibold text-xl">{props.title}</p>
+                <p className="text-gray-500 pl-6 border-l-2">
+                    {props.description}
+                </p>
+            </motion.div>
+        </>
     )
 }
 

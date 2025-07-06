@@ -9,7 +9,8 @@ import {slideBottomMotion} from "../../motions/slideBottom.motion.ts";
 
 export default function NavbarComponent(): ReactElement {
     return (
-        <motion.div {...slideBottomMotion(0.2)} className="py-8 container flex justify-between items-center">
+        <motion.div {...slideBottomMotion(0.2)}
+                    className="py-4 container flex justify-between items-center sticky top-0 bg-white bg-opacity-60 backdrop-blur-md z-40">
             <LogoComponent/>
             <LinksComponent/>
             <QuotesButtonComponent/>

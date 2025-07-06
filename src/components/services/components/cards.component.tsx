@@ -33,7 +33,9 @@ export default function CardsComponent(): ReactElement {
                     className="w-[300px] mx-auto md:max-w-[500px]"
                 />
             </motion.div>
-            {CARDS_DATA.map(card => <CardComponent {...card}/>)}
+            {CARDS_DATA.map((card, index) => {
+                return <CardComponent props={card} key={index}/>
+            })}
         </div>
     )
 }
