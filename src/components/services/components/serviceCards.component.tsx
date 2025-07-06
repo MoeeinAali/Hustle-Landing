@@ -1,7 +1,7 @@
 import type {ReactElement} from "react";
 import {motion} from "motion/react";
 import {slideLeftWhileInViewMotion} from "../../../motions/slideLeftWhileInView.motion.ts";
-import CardComponent, {type CardData} from "./card.component.tsx";
+import ServiceCardComponent, {type CardData} from "./serviceCard.component.tsx";
 
 const CARDS_DATA: CardData[] = [
     {
@@ -21,7 +21,7 @@ const CARDS_DATA: CardData[] = [
     },
 ]
 
-export default function CardsComponent(): ReactElement {
+export default function ServiceCardsComponent(): ReactElement {
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <motion.div
@@ -34,7 +34,7 @@ export default function CardsComponent(): ReactElement {
                 />
             </motion.div>
             {CARDS_DATA.map((card, index) => {
-                return <CardComponent props={card} key={index}/>
+                return <ServiceCardComponent props={card} key={index}/>
             })}
         </div>
     )

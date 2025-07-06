@@ -7,11 +7,10 @@ export type CardData = {
     title: string,
     description: string,
 }
-export default function CardComponent({key,props}: { props: CardData, key: number }): ReactElement {
+export default function ServiceCardComponent({props}: { props: CardData }): ReactElement {
     return (
         <>
             <motion.div
-                key={key}
                 {...slideLeftWhileInViewMotion(props.motionDelay)}
                 className="max-w-[300px] mx-auto space-y-4"
             >

@@ -2,6 +2,8 @@ import NavbarComponent from "./components/navbar/navbar.component.tsx";
 import HeroComponent from "./components/hero/hero.component.tsx";
 import ServicesComponent from "./components/services/services.component.tsx";
 import BannerComponent from "./components/banner/banner.component.tsx";
+import Banner2Component from "./components/banner/banner2.component.tsx";
+import CardsComponent from "./components/cards/cards.tsx";
 
 function App() {
     return (
@@ -10,6 +12,8 @@ function App() {
             <HeroComponent/>
             <ServicesComponent/>
             <BannerComponent/>
+            <CardsComponent/>
+            <Banner2Component/>
         </main>
     );
 }
